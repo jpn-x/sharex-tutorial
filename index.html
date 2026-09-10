@@ -270,9 +270,9 @@
 
     <div class="filename-preview reveal">
       <p class="filename-preview-title">📁 完成形はこんな感じ</p>
-      <code>2026-09-10_20-42-31.png</code>
-      <code>2026-09-10_20-43-05.png</code>
-      <code>2026-09-10_20-44-18.png</code>
+      <code>20260910_204231.png</code>
+      <code>20260910_204305.png</code>
+      <code>20260910_204418.png</code>
       <p class="filename-preview-note">名前を考えなくても、撮った日時で自動保存。</p>
     </div>
 
@@ -287,11 +287,11 @@
       </li>
       <li class="step-card reveal">
         <span class="step-card-num">3</span>
-        <p>「<strong>キャプチャー</strong>」を選択</p>
+        <p>左側「<strong>アップロード</strong>」の中の「<strong>ファイルの命名</strong>」を選択</p>
       </li>
       <li class="step-card reveal">
         <span class="step-card-num">4</span>
-        <p>「<strong>ファイル名</strong>」または「<strong>書式</strong>」の入力欄を探す</p>
+        <p>「<strong>キャプチャー/クリップボード アップロード名の規則</strong>」の入力欄を探す</p>
       </li>
       <li class="step-card reveal">
         <span class="step-card-num">5</span>
@@ -299,8 +299,19 @@
       </li>
     </ol>
 
+    <div class="shot-frame shot-frame-wide reveal">
+      <img src="images/sharex/image-04-file-naming.png"
+           alt="ShareXのタスクの設定で、アップロード内のファイルの命名を開いた画面"
+           onerror="this.style.display='none';this.nextElementSibling.hidden=false;">
+      <div class="shot-placeholder" hidden>
+        <span class="shot-ph-badge">IMAGE 04</span>
+        <span class="shot-ph-text">アップロード → ファイルの命名 画面</span>
+      </div>
+      <span class="shot-path">images/sharex/image-04-file-naming.png</span>
+    </div>
+
     <div class="code-card reveal">
-      <code id="filenameCode">%y-%mo-%d_%h-%mi-%s</code>
+      <code id="filenameCode">%y%mo%d_%h%mi%s</code>
       <button class="copy-btn" id="copyBtn" type="button" data-default="コピー" data-done="コピーしたよ ✓">
         コピー
       </button>
@@ -363,10 +374,10 @@
     <div class="folder-mock reveal">
       <p class="folder-mock-title">📁 ShareX保存フォルダ</p>
       <ul class="folder-mock-list" id="folderMockList" aria-live="off">
-        <li class="folder-file">2026-09-10_20-42-31.png</li>
-        <li class="folder-file">2026-09-10_20-43-05.png</li>
-        <li class="folder-file">2026-09-10_20-44-18.png</li>
-        <li class="folder-file">2026-09-10_20-44-52.png</li>
+        <li class="folder-file">20260910_204231.png</li>
+        <li class="folder-file">20260910_204305.png</li>
+        <li class="folder-file">20260910_204418.png</li>
+        <li class="folder-file">20260910_204452.png</li>
       </ul>
     </div>
 
