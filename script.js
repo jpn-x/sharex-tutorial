@@ -60,20 +60,6 @@
     revealEls.forEach((el) => el.classList.add('is-visible'));
   }
 
-  /* ---------- screenshot placeholder fallback ---------- */
-  document.querySelectorAll('.shot-frame img').forEach((img) => {
-    const showPlaceholder = () => {
-      img.style.display = 'none';
-      const placeholder = img.nextElementSibling;
-      if (placeholder) placeholder.hidden = false;
-    };
-    if (img.complete && img.naturalWidth === 0) {
-      showPlaceholder();
-    } else {
-      img.addEventListener('error', showPlaceholder);
-    }
-  });
-
   /* ---------- to-top button ---------- */
   const toTop = document.getElementById('toTop');
   if (toTop) {
