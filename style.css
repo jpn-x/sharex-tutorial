@@ -256,6 +256,52 @@ strong{ color:var(--pink-deep); }
 .dl-button-title{ display:block; font-weight:800; font-size:1.05rem; }
 .dl-button-sub{ display:block; font-size:.82rem; color:var(--ink-soft); }
 
+/* ============ OS download cards (STEP0) ============ */
+.dl-os-cards{
+  display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:8px; align-items:stretch;
+}
+.dl-os-card{
+  background:var(--white); border-radius:var(--radius-lg);
+  padding:28px 24px; box-shadow:var(--shadow-card);
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+}
+.dl-os-win{ border:4px solid var(--pink); }
+.dl-os-mac{ border:3px solid var(--purple-soft); background:var(--cream); justify-content:center; }
+
+.dl-os-label{ font-weight:900; font-size:1.08rem; margin:0 0 4px; }
+.dl-os-sub{ font-weight:700; color:var(--pink-deep); margin:0 0 20px; }
+
+.dl-primary-btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  text-decoration:none; color:#fff; background:var(--pink);
+  font-weight:800; font-size:1.02rem; text-align:center;
+  padding:17px 26px; border-radius:999px; width:100%;
+  box-shadow:var(--shadow-btn);
+  transition:transform .15s, box-shadow .15s;
+}
+.dl-primary-btn:hover{ transform:translateY(-2px); }
+.dl-primary-btn:active{ transform:translateY(3px); box-shadow:0 2px 0 var(--pink-deep); }
+
+.dl-os-note{ font-size:.85rem; color:var(--ink-soft); margin:16px 0 14px; }
+
+.dl-sub-link{
+  font-size:.85rem; font-weight:700; color:var(--purple);
+  text-decoration:none; border-bottom:2px solid var(--purple-soft);
+  padding-bottom:2px;
+}
+.dl-sub-link:hover{ color:var(--pink-deep); border-color:var(--pink-soft); }
+
+.dl-os-mac-body{ font-size:.92rem; color:var(--ink-soft); margin:0 0 20px; line-height:1.7; }
+.dl-os-mac-body strong{ color:var(--purple); }
+
+.dl-mac-links{ display:flex; flex-direction:column; gap:10px; width:100%; }
+.dl-mac-links a{
+  display:block; text-decoration:none; font-weight:700; font-size:.92rem;
+  color:var(--ink); background:var(--white); border:2px solid var(--purple-soft);
+  padding:13px 16px; border-radius:999px; transition:background .15s, transform .15s;
+}
+.dl-mac-links a:hover{ background:var(--purple-soft); transform:translateY(-1px); }
+
 /* ============ taskbar notice ============ */
 .taskbar-notice{
   display:flex; flex-direction:column; align-items:center;
@@ -533,6 +579,7 @@ strong{ color:var(--pink-deep); }
   .complete-grid{ grid-template-columns:repeat(2,1fr); }
   .extra-cards{ grid-template-columns:repeat(2,1fr); }
   .code-explain-list{ grid-template-columns:1fr; }
+  .dl-os-cards{ grid-template-columns:1fr; }
 }
 
 @media (max-width:640px){
