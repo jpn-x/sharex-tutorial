@@ -183,14 +183,12 @@ strong{ color:var(--pink-deep); }
 
 .hero-keyboard{
   position:relative; z-index:2;
-  max-width:560px; margin:44px auto 0;
-  background:var(--dark); border-radius:var(--radius-lg);
-  padding:26px 20px 22px;
-  box-shadow:0 16px 0 rgba(42,30,51,0.15), 0 24px 40px rgba(42,30,51,0.25);
+  max-width:640px; margin:44px auto 0;
+  background:var(--white); border-radius:var(--radius-lg);
+  padding:18px 18px 20px;
+  box-shadow:var(--shadow-card);
 }
-.key-demo{ margin-bottom:18px; }
-.key-demo:last-of-type{ margin-bottom:10px; }
-.key-demo-label{ color:#fff; font-weight:800; font-size:.95rem; margin-bottom:10px; text-align:left; }
+.hero-keyboard-img{ width:100%; border-radius:var(--radius-md); }
 .key-row{ display:flex; align-items:center; gap:10px; justify-content:flex-start; flex-wrap:wrap; }
 .key{
   display:inline-flex; align-items:center; justify-content:center;
@@ -200,8 +198,8 @@ strong{ color:var(--pink-deep); }
   transition:transform .12s;
 }
 .key-wide{ background:var(--yellow); }
-.key-plus{ color:#fff; font-weight:800; }
-.key-demo-note{ color:var(--yellow); font-weight:800; text-align:center; margin:14px 0 0; font-size:.95rem; }
+.key-plus{ color:var(--ink-soft); font-weight:800; }
+.key-demo-note{ color:var(--pink-deep); font-weight:800; text-align:center; margin:14px 0 0; font-size:.95rem; }
 
 /* ============ SECTION shells ============ */
 .section{ padding:64px 20px; }
