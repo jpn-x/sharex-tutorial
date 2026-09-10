@@ -1,0 +1,11 @@
+{
+  "name": "ShareX超入門 - AI時代のスクショ最速ガイド",
+  "short_name": "ShareX入門",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FFF7F2",
+  "theme_color": "#FF6FA5",
+  "icons": [
+    { "src": "images/icons/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

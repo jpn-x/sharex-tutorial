@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShareX超入門｜覚えるキーは2つだけ</title>
+<meta name="description" content="AI時代、スクショは必須。だったらShareX一択。覚えるキーは2つ、変更する設定は2か所だけで、約10分で「撮る→自動保存→フォルダが開く→ファイル名も自動」を体験できる超初心者向けチュートリアル。">
+
+<link rel="icon" href="images/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/icons/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#FF6FA5">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#top">本文へスキップ</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#top" aria-label="ShareX超入門 トップへ戻る">
+      <span class="nav-logo-icon">📸</span>
+      <span class="nav-logo-text">ShareX<span class="nav-logo-sub">超入門</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navLinks" class="nav-links">
+      <a href="#top">🏠 はじめに</a>
+      <a href="#keys">📸 2つのキー</a>
+      <a href="#step1">⚙️ 2つの設定</a>
+      <a href="#complete">🎉 完成</a>
+      <a href="#extra">✨ もっと使う</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ TOP / HERO ============ -->
+<section id="top" class="hero">
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+  <div class="blob blob-3" aria-hidden="true"></div>
+  <div class="sticker sticker-1" aria-hidden="true">キラ✨</div>
+  <div class="sticker sticker-2" aria-hidden="true">かんたん!</div>
+  <div class="sticker sticker-3" aria-hidden="true">10分</div>
+
+  <div class="hero-inner reveal">
+    <p class="eyebrow">超初心者向け・所要時間 約10分</p>
+    <h1 class="hero-title">
+      ShareX、<br>
+      <span class="hero-title-accent">そのままだと<br>超もったいない！</span>
+    </h1>
+    <p class="hero-sub">覚えるキーは<strong>2つ</strong>。<br class="sp-only">設定はたった<strong>2か所</strong>。</p>
+
+    <div class="ai-banner">
+      <p class="ai-banner-line1">🤖 AIを使うなら、スクショは必須。</p>
+      <p class="ai-banner-line2">だったら、<span class="mark">ShareX一択。</span></p>
+    </div>
+
+    <p class="hero-note">
+      AIに画面を見せる。資料を切り取る。エラーを共有する。<br>
+      スクショは、AI時代の基本操作。<br>
+      だから、スクショを最強にラクにする。
+    </p>
+
+    <a href="#step0" class="cta-button">
+      10分で設定する <span aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <div class="hero-keyboard reveal">
+    <div class="key-demo">
+      <div class="key-demo-label">📸 スクリーンショット</div>
+      <div class="key-row">
+        <span class="key">Ctrl</span><span class="key-plus">+</span><span class="key key-wide">Print Screen</span>
+      </div>
+    </div>
+    <div class="key-demo">
+      <div class="key-demo-label">🎥 画面録画</div>
+      <div class="key-row">
+        <span class="key">Shift</span><span class="key-plus">+</span><span class="key key-wide">Print Screen</span>
+      </div>
+    </div>
+    <p class="key-demo-note">この2つだけ覚えればOK。</p>
+  </div>
+</section>
+
+<!-- ============ STEP 0: DOWNLOAD ============ -->
+<section id="step0" class="section section-white">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">STEP 0</p>
+    <h2 class="section-title">ダウンロード＆インストール</h2>
+
+    <ol class="flow-list">
+      <li><span class="flow-num">1</span>ShareXをダウンロード</li>
+      <li><span class="flow-num">2</span>インストール</li>
+      <li><span class="flow-num">3</span>起動</li>
+    </ol>
+
+    <a class="dl-button" href="https://getsharex.com/downloads" target="_blank" rel="noopener">
+      <span class="dl-button-icon">⬇️</span>
+      <span>
+        <span class="dl-button-title">ShareX公式サイトへ</span>
+        <span class="dl-button-sub">getsharex.com</span>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ ICON MANUAL ============ -->
+<section class="section section-cream">
+  <div class="section-inner reveal">
+    <h2 class="section-title small-title">「ShareXアイコンのトリセツ」</h2>
+    <p class="section-lead">
+      同じタスクバーアイコンでも、クリックの仕方で動作が全然ちがいます。<br>
+      ここだけ先に押さえておけば、もう迷いません。
+    </p>
+
+    <div class="icon-cards">
+      <article class="icon-card reveal">
+        <div class="icon-card-head">
+          <span class="icon-card-emoji">🖱️</span>
+          <h3>左クリック 1回</h3>
+        </div>
+        <p class="icon-card-desc">いきなり撮影モードになります！</p>
+
+        <div class="shot-frame">
+          <img src="images/sharex/image-01-left-click.png"
+               alt="ShareXで左クリックした時の領域キャプチャ選択画面"
+               onerror="this.style.display='none';this.nextElementSibling.hidden=false;">
+          <div class="shot-placeholder" hidden>
+            <span class="shot-ph-badge">IMAGE 01</span>
+            <span class="shot-ph-text">左クリック → 領域キャプチャ画面</span>
+          </div>
+          <span class="shot-path">images/sharex/image-01-left-click.png</span>
+        </div>
+
+        <p class="icon-card-warn">⚠️ 設定中はここを押さない！</p>
+        <p class="icon-card-escape">もし撮影モードになっちゃったら、<kbd>Esc</kbd>キーでキャンセルできます。</p>
+      </article>
+
+      <article class="icon-card reveal">
+        <div class="icon-card-head">
+          <span class="icon-card-emoji">👉</span>
+          <h3>右クリック 1回</h3>
+        </div>
+        <p class="icon-card-desc">縦長のメニューが開きます。</p>
+
+        <div class="shot-frame">
+          <img src="images/sharex/image-02-right-click.png"
+               alt="ShareXを右クリックした時に表示される縦長メニュー"
+               onerror="this.style.display='none';this.nextElementSibling.hidden=false;">
+          <div class="shot-placeholder" hidden>
+            <span class="shot-ph-badge">IMAGE 02</span>
+            <span class="shot-ph-text">右クリック → 縦長メニュー</span>
+          </div>
+          <span class="shot-path">images/sharex/image-02-right-click.png</span>
+        </div>
+
+        <p class="icon-card-desc small">このメニューから、あとで出てくる<strong>STEP 1</strong>の設定に進みます。</p>
+      </article>
+
+      <article class="icon-card reveal">
+        <div class="icon-card-head">
+          <span class="icon-card-emoji">🖱️🖱️</span>
+          <h3>左ダブルクリック</h3>
+        </div>
+        <p class="icon-card-desc">大きな設定画面が開きます。</p>
+
+        <div class="shot-frame">
+          <img src="images/sharex/image-03-double-click.png"
+               alt="ShareXをダブルクリックした時に開く横長の設定ウィンドウ"
+               onerror="this.style.display='none';this.nextElementSibling.hidden=false;">
+          <div class="shot-placeholder" hidden>
+            <span class="shot-ph-badge">IMAGE 03</span>
+            <span class="shot-ph-text">ダブルクリック → 大きな設定画面</span>
+          </div>
+          <span class="shot-path">images/sharex/image-03-double-click.png</span>
+        </div>
+
+        <p class="icon-card-desc small">この画面から、あとで出てくる<strong>STEP 2</strong>の設定に進みます。</p>
+      </article>
+    </div>
+
+    <div class="summary-box reveal">
+      <p class="summary-box-title">ここだけ覚えて！</p>
+      <div class="summary-box-grid">
+        <div><strong>左クリック</strong><span>→ 撮影</span></div>
+        <div><strong>右クリック</strong><span>→ 縦長メニュー</span></div>
+        <div><strong>ダブルクリック</strong><span>→ 大きな設定画面</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 KEYS ============ -->
+<section id="keys" class="section section-pop">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">まず、この2つだけ覚えよう</p>
+    <h2 class="section-title">覚えるキーは、たった2つ。</h2>
+
+    <div class="key-big-cards">
+      <div class="key-big-card key-big-pink reveal">
+        <p class="key-big-label">📸 スクリーンショット</p>
+        <div class="key-row key-row-big">
+          <span class="key key-lg">Ctrl</span><span class="key-plus">+</span><span class="key key-lg key-wide">Print Screen</span>
+        </div>
+        <p class="key-big-desc">撮りたい場所を選んでスクショ！</p>
+      </div>
+
+      <div class="key-big-card key-big-purple reveal">
+        <p class="key-big-label">🎥 画面録画</p>
+        <div class="key-row key-row-big">
+          <span class="key key-lg">Shift</span><span class="key-plus">+</span><span class="key key-lg key-wide">Print Screen</span>
+        </div>
+        <p class="key-big-desc">画面録画スタート！<br><span class="key-big-desc-sub">もう一度押すと終了</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STEP 1 ============ -->
+<section id="step1" class="section section-white">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">STEP 1</p>
+    <h2 class="section-title">撮ったら保存フォルダを自動で開く</h2>
+    <p class="section-lead">「撮った画像、どこ行った問題」を消そう。</p>
+
+    <div class="mini-flow reveal">
+      <span class="mini-flow-item">📸 撮影</span>
+      <span class="mini-flow-arrow">↓</span>
+      <span class="mini-flow-item">💾 自動保存</span>
+      <span class="mini-flow-arrow">↓</span>
+      <span class="mini-flow-item">📁 保存フォルダがパッ！</span>
+    </div>
+
+    <ol class="step-cards">
+      <li class="step-card reveal">
+        <span class="step-card-num">1</span>
+        <p>ShareXアイコンを<strong>右クリック</strong></p>
+      </li>
+      <li class="step-card reveal">
+        <span class="step-card-num">2</span>
+        <p>「<strong>キャプチャー後のタスク</strong>」にマウスを合わせる</p>
+      </li>
+      <li class="step-card reveal">
+        <span class="step-card-num">3</span>
+        <p>「<strong>エクスプローラーでファイルを表示</strong>」にチェック</p>
+      </li>
+    </ol>
+
+    <p class="done-banner reveal">🎉 完了！</p>
+  </div>
+</section>
+
+<!-- ============ STEP 2 ============ -->
+<section id="step2" class="section section-cream">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">STEP 2</p>
+    <h2 class="section-title">ファイル名を自動で日時にする</h2>
+    <p class="section-lead">ファイル名まで、ShareXにやってもらおう。</p>
+
+    <div class="filename-preview reveal">
+      <p class="filename-preview-title">📁 完成形はこんな感じ</p>
+      <code>2026-09-10_20-42-31.png</code>
+      <code>2026-09-10_20-43-05.png</code>
+      <code>2026-09-10_20-44-18.png</code>
+      <p class="filename-preview-note">名前を考えなくても、撮った日時で自動保存。</p>
+    </div>
+
+    <ol class="step-cards">
+      <li class="step-card reveal">
+        <span class="step-card-num">1</span>
+        <p>ShareXアイコンを<strong>ダブルクリック</strong></p>
+      </li>
+      <li class="step-card reveal">
+        <span class="step-card-num">2</span>
+        <p>左メニューの「<strong>タスクの設定...</strong>」（⚙️歯車）をクリック</p>
+      </li>
+      <li class="step-card reveal">
+        <span class="step-card-num">3</span>
+        <p>「<strong>キャプチャー</strong>」を選択</p>
+      </li>
+      <li class="step-card reveal">
+        <span class="step-card-num">4</span>
+        <p>「<strong>ファイル名</strong>」または「<strong>書式</strong>」の入力欄を探す</p>
+      </li>
+      <li class="step-card reveal">
+        <span class="step-card-num">5</span>
+        <p>下のコードを貼り付ける</p>
+      </li>
+    </ol>
+
+    <div class="code-card reveal">
+      <code id="filenameCode">%y-%mo-%d_%h-%mi-%s</code>
+      <button class="copy-btn" id="copyBtn" type="button" data-default="コピー" data-done="コピーしたよ ✓">
+        コピー
+      </button>
+    </div>
+    <p class="code-hint">迷ったら、これをコピーして貼り付けるだけでOK。</p>
+
+    <details class="code-explain reveal">
+      <summary>コードの意味が気になる人はこちら</summary>
+      <ul class="code-explain-list">
+        <li><code>%y</code> → 年</li>
+        <li><code>%mo</code> → 月</li>
+        <li><code>%d</code> → 日</li>
+        <li><code>%h</code> → 時</li>
+        <li><code>%mi</code> → 分</li>
+        <li><code>%s</code> → 秒</li>
+      </ul>
+    </details>
+
+    <details class="version-note reveal">
+      <summary>画面が少し違う人へ</summary>
+      <p>
+        ShareXはバージョンによって画面のデザインや表記が少し異なることがあります。
+        今回の案内は現行の ShareX v21 系を基準にしています。
+        項目名が完全一致しない場合は、似た名前（「ファイル名」「書式」「Naming」など）の欄を探してみてください。
+      </p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ STEP 3 ============ -->
+<section id="step3" class="section section-pop">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">設定できた！</p>
+    <h2 class="section-title">じゃあ、1枚撮ってみよう。</h2>
+
+    <div class="key-big-card key-big-pink try-key reveal">
+      <p class="key-big-label">📸 スクリーンショット</p>
+      <div class="key-row key-row-big">
+        <span class="key key-lg">Ctrl</span><span class="key-plus">+</span><span class="key key-lg key-wide">Print Screen</span>
+      </div>
+    </div>
+
+    <div class="try-flow reveal">
+      <div class="try-flow-step"><span class="try-flow-emoji">🖱️</span>撮りたい場所をドラッグ！</div>
+      <div class="try-flow-arrow">↓</div>
+      <div class="try-flow-step"><span class="try-flow-emoji">📸</span>パシャッ！</div>
+      <div class="try-flow-arrow">↓</div>
+      <div class="try-flow-step"><span class="try-flow-emoji">💾</span>自動保存！</div>
+      <div class="try-flow-arrow">↓</div>
+      <div class="try-flow-step"><span class="try-flow-emoji">📁</span>保存フォルダが開く！</div>
+      <div class="try-flow-arrow">↓</div>
+      <div class="try-flow-step"><span class="try-flow-emoji">🏷️</span>ファイル名も自動！</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 感動ポイント ============ -->
+<section class="section section-white">
+  <div class="section-inner reveal">
+    <div class="folder-mock reveal">
+      <p class="folder-mock-title">📁 ShareX保存フォルダ</p>
+      <ul class="folder-mock-list" id="folderMockList" aria-live="off">
+        <li class="folder-file">2026-09-10_20-42-31.png</li>
+        <li class="folder-file">2026-09-10_20-43-05.png</li>
+        <li class="folder-file">2026-09-10_20-44-18.png</li>
+        <li class="folder-file">2026-09-10_20-44-52.png</li>
+      </ul>
+    </div>
+
+    <h2 class="section-title center reveal">これ、全部自動です。</h2>
+    <p class="section-lead center reveal">
+      もう保存場所を探さない。<br>
+      もうファイル名を考えない。
+    </p>
+  </div>
+</section>
+
+<!-- ============ AI 再登場 ============ -->
+<section id="ai-again" class="section section-dark">
+  <div class="section-inner reveal">
+    <h2 class="section-title on-dark center">🤖 そして、このスクショをAIに渡す。</h2>
+
+    <div class="ai-flow-cards">
+      <div class="ai-flow-card reveal">
+        <div class="ai-flow-steps">
+          <span>📸 Webページをスクショ</span>
+          <span class="ai-flow-arrow">↓</span>
+          <span>🤖 AIに見せる</span>
+          <span class="ai-flow-arrow">↓</span>
+          <span>💬「これ、どういう意味？」</span>
+          <span class="ai-flow-arrow">↓</span>
+          <span>✨ AIが回答</span>
+        </div>
+      </div>
+      <div class="ai-flow-card reveal">
+        <div class="ai-flow-steps">
+          <span>🖥️ エラー画面</span>
+          <span class="ai-flow-arrow">↓</span>
+          <span>🤖 AIに見せる</span>
+          <span class="ai-flow-arrow">↓</span>
+          <span>💬「これどう直す？」</span>
+          <span class="ai-flow-arrow">↓</span>
+          <span>✨ AIと一緒に解決</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-banner ai-banner-dark reveal">
+      <p class="ai-banner-line1">🤖 AIを使うなら、スクショは必須。</p>
+      <p class="ai-banner-line2">だったら、<span class="mark mark-dark">ShareX一択。</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPLETE ============ -->
+<section id="complete" class="section section-complete">
+  <div class="confetti" aria-hidden="true"></div>
+  <div class="section-inner reveal">
+    <p class="complete-badge">🎉 SETUP COMPLETE!</p>
+    <h2 class="section-title center">ShareX、もう使えます。</h2>
+
+    <div class="complete-grid">
+      <div class="complete-item reveal">
+        <span class="complete-emoji">📸</span>
+        <p><strong>Ctrl + Print Screen</strong></p>
+        <p class="complete-item-sub">スクショ</p>
+      </div>
+      <div class="complete-item reveal">
+        <span class="complete-emoji">🎥</span>
+        <p><strong>Shift + Print Screen</strong></p>
+        <p class="complete-item-sub">録画</p>
+      </div>
+      <div class="complete-item reveal">
+        <span class="complete-emoji">📁</span>
+        <p><strong>撮影後</strong></p>
+        <p class="complete-item-sub">保存フォルダが自動で開く</p>
+      </div>
+      <div class="complete-item reveal">
+        <span class="complete-emoji">🏷️</span>
+        <p><strong>ファイル名</strong></p>
+        <p class="complete-item-sub">日時で自動生成</p>
+      </div>
+    </div>
+
+    <p class="complete-final reveal">
+      たった2つの設定で、<br>
+      <span class="mark">スクショがめちゃくちゃラクになりました。</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ おまけ ============ -->
+<section id="extra" class="section section-cream">
+  <div class="section-inner reveal">
+    <p class="step-eyebrow">おまけ</p>
+    <h2 class="section-title">もっとShareXを使い倒したい人へ</h2>
+    <p class="section-lead">もっと知りたい人だけどうぞ。</p>
+
+    <div class="extra-cards">
+      <div class="extra-card reveal">
+        <span class="extra-emoji">🎥</span>
+        <h3>画面録画</h3>
+        <p><code>Shift + Print Screen</code></p>
+      </div>
+      <div class="extra-card reveal">
+        <span class="extra-emoji">📜</span>
+        <h3>スクロールキャプチャ</h3>
+        <p>長いWebページも1枚に</p>
+      </div>
+      <div class="extra-card reveal">
+        <span class="extra-emoji">🔤</span>
+        <h3>OCR</h3>
+        <p>画像の文字を読み取る</p>
+      </div>
+      <div class="extra-card reveal">
+        <span class="extra-emoji">🎨</span>
+        <h3>画像編集</h3>
+        <p>矢印・文字・ぼかしなど</p>
+      </div>
+      <div class="extra-card reveal">
+        <span class="extra-emoji">📌</span>
+        <h3>Pin to Screen</h3>
+        <p>画像を画面に固定</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <a href="#top" class="footer-logo">📸 ShareX超入門</a>
+  <p>🤖 AIを使うなら、スクショは必須。だったら、ShareX一択。</p>
+</footer>
+
+<button id="toTop" class="to-top" type="button" aria-label="トップへ戻る" hidden>↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
